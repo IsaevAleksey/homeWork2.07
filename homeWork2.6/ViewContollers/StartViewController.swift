@@ -19,6 +19,20 @@ final class StartViewController: UIViewController {
         view.endEditing(true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        viewControllers.forEach {
+            if let userVC = $0 as? UserViewController {
+                userVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
+                guard let personVC = navigationVC.topViewController as? PersonViewController else { return }
+                personVC.user = user
+            }
+        }
+    }
+    
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
         usernameTF.text = ""
         passwordTF.text = ""

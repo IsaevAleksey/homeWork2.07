@@ -14,9 +14,8 @@ class PersonViewController: UIViewController {
     @IBOutlet var surnameLabel: UILabel!
     
     @IBOutlet var birthdayLabel: UILabel!
-    
-    
-    private let user = User.getUser()
+
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +24,10 @@ class PersonViewController: UIViewController {
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname
         birthdayLabel.text = user.person.birthday
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        infoVC.user = user
     }
 }

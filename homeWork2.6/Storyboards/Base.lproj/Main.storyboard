@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="780" y="-825"/>
         </scene>
-        <!--HelloVC-->
+        <!--UserVC-->
         <scene sceneID="RrX-gR-fWp">
             <objects>
-                <viewController id="seC-AC-m1W" userLabel="HelloVC" customClass="UserViewController" customModule="homeWork2_6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="seC-AC-m1W" userLabel="UserVC" customClass="UserViewController" customModule="homeWork2_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hUJ-mR-A0c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,10 +146,10 @@ Unicode: U+1F44B, UTF-8: F0 9F 91 8B</string>
             </objects>
             <point key="canvasLocation" x="1575" y="-27"/>
         </scene>
-        <!--User-->
+        <!--Person-->
         <scene sceneID="AUh-fz-DVo">
             <objects>
-                <viewController title="User" id="S6D-Gi-NcV" customClass="PersonViewController" customModule="homeWork2_6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Person" id="S6D-Gi-NcV" customClass="PersonViewController" customModule="homeWork2_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9og-h5-BcW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +219,7 @@ Unicode: U+1F44B, UTF-8: F0 9F 91 8B</string>
                             <constraint firstItem="NSs-jn-feu" firstAttribute="trailing" secondItem="HVH-Dh-wYT" secondAttribute="trailing" constant="16" id="zM1-Dv-mSI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="User" id="wOv-5f-ESH">
+                    <navigationItem key="navigationItem" title="Person" id="wOv-5f-ESH">
                         <barButtonItem key="rightBarButtonItem" title="Info" id="96o-eP-krV">
                             <connections>
                                 <segue destination="N6M-mJ-qRa" kind="show" id="G7E-Sa-Lf1"/>

@@ -13,7 +13,7 @@ class InfoViewController: UIViewController {
     
     @IBOutlet var hobbyLabel: UILabel!
     
-    private let user = User.getUser()
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,7 +11,7 @@ class UserViewController: UIViewController {
     
     @IBOutlet var helloUserLabel: UILabel!
     
-    let user = User.getUser()
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
